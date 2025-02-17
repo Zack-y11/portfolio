@@ -2,56 +2,52 @@
   "analyticsCode": "",
   "pageLayout": "two-column",
   "basics": {
-    "name": "MiraHikari",
-    "label": "Senior Full Stack Developer",
+    "name": "Isaac Medrano",
+    "label": "Full Stack Developer | Backend",
     "image": "/avatar.png",
-    "email": "mirahikari@gcxstudio.cn",
+    "email": "dev.zacknmr28@gmail.com",
     "url": "https://www.gcxstudio.cn",
-    "summary": "Born in 2010, I primarily work with TypeScript and JavaScript for full-stack development, and enjoy working with various technologies.",
+    "summary": "I primarily work with TypeScript and JavaScript for full-stack development, and enjoy working with various technologies.",
     "theme": "red",
     "location": {
-      "address": "Nanchang",
-      "city": "Jiangxi Province",
-      "countryCode": "CN",
-      "region": "China"
+      "address": "Centro",
+      "city": "San Miguel",
+      "countryCode": "SV",
+      "region": "El Salvador"
     },
     "profiles": [
       {
-        "network": "Bilibili",
-        "icon": "ri:bilibili-line",
-        "username": "MiraHikari",
-        "url": "https://space.bilibili.com/480025691"
+        "network": "X",
+        "icon": "ri:twitter-x-line",
+        "username": "@meIsaac0",
+        "url": "https://x.com/MeIsaac0"
       },
       {
         "network": "QQ",
-        "icon": "ri:qq-fill",
+        "icon": "ri:instagram-line", 
         "username": "Gong_cx",
         "url": "https://admin.qidian.qq.com/static_proxy/b2b-qq/wpa-link/index.html#/person?uin=3175992523"
       },
       {
         "network": "GitHub",
         "icon": "mdi:github",
-        "username": "MiraHikari",
-        "url": "https://github.com/MiraHikari"
+        "username": "Zack-y11",
+        "url": "https://github.com/Zack-y11"
       }
-    ],
-    "beian": {
-      "mint": "赣ICP备2021005460号-1",
-      "police": "赣公网安备 36010302000349号"
-    }
+    ]
   },
   "images": {
-    "intro": "Photography is the art of light, and images are the contours of memory.",
+    "intro": "Photography is the art of light, and images are the contours of memory. Remembering is reliving.",
     "list": [
       {
-        "image": "https://i0.hdslb.com/bfs/article/6720a7355fd11b9666e2716cadf04e45480025691.jpg@90q_1e_1c.webp",
-        "alt": "Sunset in Nanchang",
-        "desc": "Shot on a sunny day in Nanchang. 2024.10.05"
+        "image": "https://res.cloudinary.com/dkeu1rgrm/image/upload/v1739747078/IMG_20240225_053911_ifs5bw.jpg",
+        "alt": "Sunrise in Santa Ana Volcano",
+        "desc": "Shot on a early day in Santa Ana. 2024.02.25"
       },
       {
-        "image": "https://i0.hdslb.com/bfs/article/82f680f56532d942f74d86801abf49ea480025691.jpg@90q_1e_1c.webp",
-        "alt": "My Cat",
-        "desc": "A Ragdoll cat who stayed for a year. She's a girl."
+        "image": "https://res.cloudinary.com/dkeu1rgrm/image/upload/v1739748573/IMG_20240721_084442_kgt1kc.jpg",
+        "alt": "Taking a rest",
+        "desc": "Shot on a nice day in Ataco. 2024.07.21"
       },
       {
         "image": "https://i0.hdslb.com/bfs/article/14e6ae3c368b0eddeeb2b5c338239486480025691.jpg@90q_1e_1c.webp",
@@ -67,78 +63,84 @@
   },
   "education": [
     {
-      "institution": "Nanchang No.27 Middle School",
+      "institution": "Eastern University",
       "url": "",
-      "area": "Regular Student",
+      "area": "Engineering",
       "studyType": "Full-time student",
-      "startDate": "2021-9-01",
+      "startDate": "2023-01-12",
       "endDate": null
     }
   ],
   "certificates": [
     {
       "name": "Success has lived a day in the world.",
-      "date": "2010-04-14",
+      "date": "2001-11-28",
       "url": "",
       "issuer": "Myself"
     },
     {
-      "name": "TCCP - Senior Cloud Architecture Engineer",
+      "name": "Front-End Development",
       "date": "2023-05-01",
       "url": "",
-      "issuer": "Tencent Cloud"
+      "issuer": "Eastern University"
     }
   ],
   "work": [
     {
-      "name": "Sgguo Development Team",
-      "position": "Full-stack Developer",
-      "location_type": "Remote",
-      "location": "CN",
-      "url": "https://github.com/Sgguo-Development-Team",
-      "startDate": "2022-06-01",
+      "name": "Eastern University",
+      "position": "University Intern - Backend Developer",
+      "location_type": "",
+      "location": "SV",
+      "url": "",
+      "startDate": "2023-06-01",
       "endDate": null,
-      "summary": "Developing high-availability full-stack projects.",
+      "summary": "Backend developer intern gains experience in coding and optimization tasks.",
       "highlights": [
-        "Enhanced internal workflow efficiency by 30%."
+        ""
       ],
       "responsibilities": [
-        "Developed and maintained backend services using Node.js and Golang."
+        "Guided a group of students in developing APIs using Node.js, TypeScript, and the Express framework.",
+        "Work closely with front-end developers to integrate user-facing elements with server-side logic."
+
       ],
       "achievements": [
-        "Implemented a cloud drive and verification code system."
+        "Create a enviroment for students to learn and practice.",
+        "Helped students to understand terms of backend development.",
+        "Developed innovative solutions for complex backend problems, such as integrating third-party services or optimizing system architecture."
       ],
       "skills": {
-        "PHP": "simple-icons:php",
+        "HTML": "simple-icons:html5",
+        "CSS": "ri:css3-fill",
+        "TypeScript": "simple-icons:typescript",
         "Node": "ri:nodejs-line",
-        "Golang": "simple-icons:go",
         "Next.js": "ri:nextjs-fill",
         "React": "mdi:react",
         "SQL": "simple-icons:mysql",
         "Git": "mdi:git",
         "GitHub": "mdi:github",
-        "NestJS": "simple-icons:nestjs",
-        "Vue": "mdi:vuejs"
+        "Docker": "mdi:docker"
       }
     },
     {
-      "name": "Riddle Town Team",
+      "name": "Mentarie",
       "position": "Full-stack Developer",
       "location_type": "Remote",
       "location": "CN",
-      "url": "https://rth2.gcxstudio.cn",
-      "startDate": "2023-01-01",
-      "endDate": "2024-02-11",
-      "summary": "Led page design and account systems.",
+      "url": "https://mentarie.com/",
+      "startDate": "2023-06-01",
+      "endDate": null,
+      "summary": "Manage a backend system also integrate LLM for response with low latency",
       "highlights": [
         "Completed 95% of project content."
       ],
       "responsibilities": [
-        "Developed complete pages.",
-        "Integrated user-facing elements with server-side logic."
+        "Integrate LLM with a vector database such as ChromaDB",
+        "Developed a backend system using Node.js, TypeScript, and the Express framework.",
+        "Optimize the system architecture to improve performance and scalability."
       ],
       "achievements": [
-        "Ensured smooth project execution."
+        "Ensured smooth project execution.",
+        "Improve response with low latency."
       ],
       "skills": {
         "HTML": "simple-icons:html5",
@@ -147,14 +149,12 @@
         "TypeScript": "simple-icons:typescript",
         "Vite": "simple-icons:vite",
         "Node": "ri:nodejs-line",
-        "Docker": "mdi:docker",
-        "WordPress": "ri:wordpress-fill",
-        "Astro": "simple-icons:astro",
         "SQL": "simple-icons:mysql",
         "Tailwind": "mdi:tailwind",
         "React": "mdi:react",
         "GitHub": "mdi:github",
-        "Git": "mdi:git"
+        "Git": "mdi:git",
+        "Express": "simple-icons:express"
       }
     }
   ],
@@ -209,6 +209,25 @@
         "Frontend",
         "Backend",
         "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Express",
+      "icon": "simple-icons:express",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Python",
+      "icon": "simple-icons:python",
+      "level": "Intermediate",
+      "keywords": [
+        "Scripting",
+        "Automation"
       ]
     },
     {
@@ -289,17 +308,6 @@
       ]
     },
     {
-      "name": "Vue",
-      "icon": "mdi:vuejs",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    },
-    {
       "name": "Docker",
       "icon": "mdi:docker",
       "level": "Intermediate",
@@ -329,33 +337,12 @@
       ]
     },
     {
-      "name": "WordPress",
-      "icon": "ri:wordpress-fill",
-      "level": "Intermediate",
-      "keywords": [
-        "PHP",
-        "Fullstack",
-        "Frontend"
-      ]
-    },
-    {
       "name": "Golang",
       "icon": "simple-icons:go",
       "level": "Beginner",
       "keywords": [
         "Backend",
         "Cloud Service"
-      ]
-    },
-    {
-      "name": "Astro",
-      "icon": "simple-icons:astro",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "SSR",
-        "Static Generation"
       ]
     },
     {
@@ -379,40 +366,12 @@
       ]
     },
     {
-      "name": "Tauri",
-      "icon": "simple-icons:tauri",
-      "level": "Beginner",
-      "keywords": [
-        "Desktop App",
-        "Rust",
-        "Webview"
-      ]
-    },
-    {
-      "name": "Rust",
-      "icon": "simple-icons:rust",
-      "level": "Beginner",
-      "keywords": [
-        "Desktop App",
-        "Webview"
-      ]
-    },
-    {
       "name": "Socket.IO",
       "icon": "simple-icons:socketdotio",
       "level": "Beginner",
       "keywords": [
         "Realtime",
         "Websocket"
-      ]
-    },
-    {
-      "name": "Electron",
-      "icon": "simple-icons:electron",
-      "level": "Beginner",
-      "keywords": [
-        "Desktop App",
-        "Webview"
       ]
     },
     {
@@ -450,23 +409,6 @@
       "keywords": [
         "Serverless",
         "Static Site Hosting"
-      ]
-    },
-    {
-      "name": "Tencent Cloud",
-      "icon": "simple-icons:tencentqq",
-      "level": "Intermediate",
-      "keywords": [
-        "Cloud Service"
-      ]
-    },
-    {
-      "name": "Cloudflare Edge Functions",
-      "icon": "simple-icons:cloudflare",
-      "level": "Expert",
-      "keywords": [
-        "Serverless",
-        "Edge Computing"
       ]
     }
   ],
