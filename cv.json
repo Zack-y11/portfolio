@@ -23,10 +23,10 @@
         "url": "https://x.com/MeIsaac0"
       },
       {
-        "network": "QQ",
+        "network": "Instagram",
         "icon": "ri:instagram-line", 
-        "username": "Gong_cx",
-        "url": "https://admin.qidian.qq.com/static_proxy/b2b-qq/wpa-link/index.html#/person?uin=3175992523"
+        "username": "isaacromero315",
+        "url": "https://www.instagram.com/isaac_romero315/"
       },
       {
         "network": "GitHub",
@@ -65,19 +65,13 @@
     {
       "institution": "Eastern University",
       "url": "",
-      "area": "Engineering",
+      "area": "Software Engineering",
       "studyType": "Full-time student",
       "startDate": "2023-01-12",
       "endDate": null
     }
   ],
   "certificates": [
-    {
-      "name": "Success has lived a day in the world.",
-      "date": "2001-11-28",
-      "url": "",
-      "issuer": "Myself"
-    },
     {
       "name": "Front-End Development",
       "date": "2023-05-01",
@@ -125,7 +119,7 @@
       "name": "Mentarie",
       "position": "Full-stack Developer",
       "location_type": "Remote",
-      "location": "CN",
+      "location": "SV",
       "url": "https://mentarie.com/",
       "startDate": "2023-06-01",
       "endDate": null,
@@ -414,12 +408,12 @@
   ],
   "languages": [
     {
-      "language": "Chinese",
+      "language": "Spanish",
       "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Intermediate"
+      "fluency": "Intermediate - B1"
     }
   ],
   "interests": [
@@ -427,50 +421,51 @@
       "name": "Technology",
       "keywords": [
         "AI",
-        "Blockchain"
+        "Backend",
+        "Fullstack"
       ]
     }
   ],
   "references": [
     {
-      "name": "MiraHikari",
+      "name": "Isaac Medrano",
       "reference": "Reference…"
     }
   ],
   "projects": [
     {
-      "name": "Cloudflare Vmail",
+      "name": "Shorten URL",
       "image": {
-        "url": "https://i0.hdslb.com/bfs/article/985e2caa8266dee4b9861ee6a341886d480025691.png@1e_1c.webp",
+        "url": "https://res.cloudinary.com/dkeu1rgrm/image/upload/v1740239307/shorty_vzogzd.png",
         "position": "container",
-        "dark": "https://i0.hdslb.com/bfs/article/4d0bf8a784d22e54e3e61763c361c9ef480025691.png@100q_1e_1c.webp"
+        "dark": "https://res.cloudinary.com/dkeu1rgrm/image/upload/v1740239307/shorty_vzogzd.png"
       },
       "isActive": true,
       "description": "An open source temporary email tool, fully on Cloudflare. Inspired by oiov/vmail",
       "highlights": [
-        "🎯 Privacy-friendly, no registration required, out-of-the-box",
-        "✨ Support saving passwords and retrieving email addresses",
-        "😄 Support multiple domain name suffixes",
-        "🚀 100% open source, fully based on Cloudflare."
+        "🎯 Privacy-friendly, no registration required",
+        "✨ Cache support, faster response",
+        "😄 Only you can access to your links and delete it when you want",
+        "🚀 Shareable with people"
       ],
-      "url": "https://what-the-fuck.sbs",
-      "github": "https://github.com/MiraHikari/cloudflare-vmail"
+      "url": "https://url-small.fly.dev/",
+      "github": "https://github.com/Zack-y11/short-url-service"
     },
     {
-      "name": "Riddle Town Hunt 2",
+      "name": "Full Stack Ecommerce + Stripe Integration",
       "image": {
-        "url": "https://rth2-webstatic.gbclstudio.cn/wp-content/uploads/2024/02/1707656250-76b2b0d2c94824e89a2b8b2c7d1c6afe.png",
+        "url": "https://res.cloudinary.com/dkeu1rgrm/image/upload/v1740240169/e-commerce_q9s8ni.png",
         "position": "background"
       },
-      "isActive": false,
-      "description": "Public decryption activity in the form of Puzzle Hunt.",
+      "isActive": true,
+      "description": "It is a simple ecommerce, where you can do things as a real ecommerce.",
       "highlights": [
-        "👌 More than 1000 people participated, system runs normally",
-        "😮‍ Use headless CMS: WordPress to storage and manage contents, dynamically render page",
-        "😊 Windows-like interface",
-        "💕 Based on Astro"
+        "🛒 web-app side client",
+        "🔒 Secure payment with Stripe and JWT as a shield of website",
+        "📦 Order history and Payments"
       ],
-      "url": "https://rth2.gcxstudio.cn/"
+      "url": "https://stripe-ecommerce.netlify.app/",
+      "github": ""
     }
   ]
 }
