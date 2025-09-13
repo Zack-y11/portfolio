@@ -1,36 +1,89 @@
+// 布局类型定义
+export type PageLayout = 'single' | 'two';
+
+// 数据验证结果接口
+export interface ValidationResult {
+  isValid: boolean;
+  errors: string[];
+  warnings: string[];
+}
+
 export interface CV {
+  analyticsCode?: string;
+  pageLayout: PageLayout;
   basics: Basics;
-  work: Array<Work>;
-  volunteer: Array<Volunteer>;
-  education: Array<Education>;
-  awards: Array<Awards>;
-  certificates: Array<Certificates>;
-  publications: Array<Publications>;
-  skills: Array<Skills>;
-  languages: Array<Languages>;
-  interests: Array<Interests>;
-  references: Array<References>;
-  projects: Array<Projects>;
+  work?: Array<Work>;
+  volunteer?: Array<Volunteer>;
+  education?: Array<Education>;
+  awards?: Array<Awards>;
+  certificates?: Array<Certificates>;
+  publications?: Array<Publications>;
+  skills?: Array<Skills>;
+  languages?: Array<Languages>;
+  interests?: Array<Interests>;
+  references?: Array<References>;
+  projects?: Array<Projects>;
+  images?: Images;
 }
 
 interface Basics {
   name: string;
   label: string;
-  image: string;
-  email: string;
-  phone: string;
-  url: string;
-  summary: string;
-  location: Location;
-  profiles: Array<Profiles>;
+  image?: string;
+  email?: string;
+  phone?: string;
+  url?: string;
+  summary?: string;
+  theme?: string;
+  location?: Location;
+  profiles?: Array<Profiles>;
+  beian?: {
+    mint?: string;
+    police?: string;
+  };
+  about?: About;
+}
+
+interface About {
+  description?: string;
+  personalInfo?: Array<{
+    emoji: string;
+    label: string;
+    value: string;
+    color: string;
+  }>;
+  traits?: Array<{
+    emoji: string;
+    text: string;
+    color: string;
+  }>;
+  highlights?: Array<{
+    emoji: string;
+    text: string;
+    color: string;
+  }>;
+  quote?: {
+    text: string;
+    emoji: string;
+    values?: Array<{
+      emoji: string;
+      label: string;
+      color: string;
+    }>;
+  };
+  // 保持向后兼容性
+  tags?: Array<{
+    icon: string;
+    text: string;
+  }>;
 }
 
 interface Location {
-  address: string;
-  postalCode: string;
-  city: string;
-  countryCode: string;
-  region: string;
+  address?: string;
+  postalCode?: string;
+  city?: string;
+  countryCode?: string;
+  region?: string;
 }
 
 interface Profiles {
@@ -43,11 +96,16 @@ interface Profiles {
 interface Work {
   name: string;
   position: string;
-  url: string;
+  location_type?: string;
+  location?: string;
+  url?: string;
   startDate: DateStr;
   endDate: DateStr | null;
-  summary: string;
-  highlights: Highlight;
+  summary?: string;
+  highlights?: Highlight;
+  responsibilities?: Array<string>;
+  achievements?: Array<string>;
+  skills?: Record<string, string>;
 }
 
 type DateStr = `${string}-${string}-${string}`;
@@ -93,13 +151,13 @@ interface Publications {
 
 interface Education {
   institution: string;
-  url: string;
+  url?: string;
   area: string;
   studyType: string;
   startDate: DateStr;
-  endDate: DateStr;
-  score: string;
-  courses: Array<string>;
+  endDate: DateStr | null;
+  score?: string;
+  courses?: Array<string>;
 }
 
 interface Languages {
@@ -127,11 +185,25 @@ type Language =
 
 interface Projects {
   name: string;
-  isActive: boolean;
+  isActive?: boolean;
   description: string;
-  highlights: Highlight;
-  url: string;
+  highlights?: Highlight;
+  url?: string;
   github?: string;
+  image?: {
+    url: string;
+    position?: string;
+    dark?: string;
+  };
+}
+
+interface Images {
+  intro?: string;
+  list?: Array<{
+    image: string;
+    alt?: string;
+    desc?: string;
+  }>;
 }
 
 interface Interests {

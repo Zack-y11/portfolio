@@ -1,19 +1,96 @@
 {
   "analyticsCode": "",
-  "pageLayout": "two-column",
+  "pageLayout": "two",
   "basics": {
     "name": "MiraHikari",
-    "label": "Senior Full Stack Developer",
+    "label": "全栈开发工程师",
     "image": "/avatar.png",
     "email": "mirahikari@gcxstudio.cn",
     "url": "https://www.gcxstudio.cn",
-    "summary": "Born in 2010, I primarily work with TypeScript and JavaScript for full-stack development, and enjoy working with various technologies.",
+    "summary": "2010年出生，主要使用 TypeScript 和 JavaScript 进行全栈开发，喜欢尝试各种技术。拥有丰富的Web开发经验，熟练掌握现代前端框架和后端技术，致力于创建高质量、用户友好的数字产品。具备良好的团队协作能力和项目管理经验。",
+    "about": {
+      "description": "拥有丰富的Web开发经验，熟练掌握现代前端框架和后端技术，致力于创建高质量、用户友好的数字产品。具备良好的团队协作能力和项目管理经验。",
+      "personalInfo": [
+        {
+          "emoji": "🎂",
+          "label": "出生年份",
+          "value": "2010年",
+          "color": "text-blue-600 dark:text-blue-400"
+        },
+        {
+          "emoji": "🚀",
+          "label": "专业方向",
+          "value": "全栈开发",
+          "color": "text-purple-600 dark:text-purple-400"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "❤️",
+          "text": "喜欢尝试各种技术",
+          "color": "text-red-500"
+        },
+        {
+          "emoji": "👥",
+          "text": "团队协作",
+          "color": "text-blue-500"
+        },
+        {
+          "emoji": "📋",
+          "text": "项目管理",
+          "color": "text-green-500"
+        }
+      ],
+      "highlights": [
+        {
+          "emoji": "⭐",
+          "text": "用户友好的数字产品",
+          "color": "text-yellow-500"
+        },
+        {
+          "emoji": "🚀",
+          "text": "高质量代码",
+          "color": "text-blue-500"
+        },
+        {
+          "emoji": "💡",
+          "text": "现代前端框架",
+          "color": "text-purple-500"
+        },
+        {
+          "emoji": "🎨",
+          "text": "用户体验设计",
+          "color": "text-pink-500"
+        }
+      ],
+      "quote": {
+        "text": "致力于创建高质量、用户友好的数字产品",
+        "emoji": "✨",
+        "values": [
+          {
+            "emoji": "💻",
+            "label": "代码",
+            "color": "text-blue-500"
+          },
+          {
+            "emoji": "🎨",
+            "label": "设计",
+            "color": "text-pink-500"
+          },
+          {
+            "emoji": "❤️",
+            "label": "热情",
+            "color": "text-red-500"
+          }
+        ]
+      }
+    },
     "theme": "red",
     "location": {
-      "address": "Nanchang",
-      "city": "Jiangxi Province",
+      "address": "南昌",
+      "city": "江西",
       "countryCode": "CN",
-      "region": "China"
+      "region": "中国"
     },
     "profiles": [
       {
@@ -41,49 +118,51 @@
     }
   },
   "images": {
-    "intro": "Photography is the art of light, and images are the contours of memory.",
+    "intro": "摄影是光影的艺术，图像是记忆的轮廓。",
     "list": [
       {
         "image": "https://i0.hdslb.com/bfs/article/6720a7355fd11b9666e2716cadf04e45480025691.jpg@90q_1e_1c.webp",
-        "alt": "Sunset in Nanchang",
-        "desc": "Shot on a sunny day in Nanchang. 2024.10.05"
+        "alt": "南昌夕阳",
+        "desc": "南昌晴天拍摄。2024.10.05"
       },
       {
         "image": "https://i0.hdslb.com/bfs/article/82f680f56532d942f74d86801abf49ea480025691.jpg@90q_1e_1c.webp",
-        "alt": "My Cat",
-        "desc": "A Ragdoll cat who stayed for a year. She's a girl."
+        "alt": "我的猫咪",
+        "desc": "陪伴了一年的布偶猫，是个小女孩。"
       },
       {
         "image": "https://i0.hdslb.com/bfs/article/14e6ae3c368b0eddeeb2b5c338239486480025691.jpg@90q_1e_1c.webp",
-        "alt": "Emoji",
-        "desc": "True, dude"
+        "alt": "表情符号",
+        "desc": "确实如此，兄弟"
       },
       {
-        "image": "https://i0.hdslb.com/bfs/article/fe1737e9d7b6c2b21eedaf60b6dc9f86480025691.jpg@90q_1e_1c.webp",
-        "alt": "Cat Kernel Crashed",
-        "desc": "Cat Kernel Crashed"
+        "image": "https://i0.hdslb.com/bfs/openplatform/f68fe6f16c4c5e31158fb1941ea220b0fc7deac5.jpg@1e_1c.webp",
+        "alt": "新开始",
+        "desc": "New Journey"
       }
     ]
   },
   "education": [
     {
-      "institution": "Nanchang No.27 Middle School",
+      "institution": "南昌中学",
       "url": "",
-      "area": "Regular Student",
-      "studyType": "Full-time student",
-      "startDate": "2021-9-01",
+      "area": "普通学生",
+      "studyType": "全日制学生",
+      "startDate": "2025-9-01",
       "endDate": null
+    },
+    {
+      "institution": "南昌第二十四中学",
+      "url": "",
+      "area": "普通学生",
+      "studyType": "全日制学生",
+      "startDate": "2021-9-01",
+      "endDate": "2025-06-17"
     }
   ],
   "certificates": [
     {
-      "name": "Success has lived a day in the world.",
-      "date": "2010-04-14",
-      "url": "",
-      "issuer": "Myself"
-    },
-    {
-      "name": "TCCP - Senior Cloud Architecture Engineer",
+      "name": "TCCP - 高级云架构工程师",
       "date": "2023-05-01",
       "url": "",
       "issuer": "Tencent Cloud"
@@ -92,21 +171,32 @@
   "work": [
     {
       "name": "Sgguo Development Team",
-      "position": "Full-stack Developer",
-      "location_type": "Remote",
+      "position": "全栈开发工程师 & 核心设计师",
+      "location_type": "远程",
       "location": "CN",
       "url": "https://github.com/Sgguo-Development-Team",
       "startDate": "2022-06-01",
       "endDate": null,
-      "summary": "Developing high-availability full-stack projects.",
+      "summary": "开发高可用性全栈项目，负责系统架构设计和技术选型，带领团队完成多个重要项目的开发和上线。作为星闪工具箱项目的核心开发者和设计师，获得华为开发者年度盛典卓越社区价值贡献奖。",
       "highlights": [
-        "Enhanced internal workflow efficiency by 30%."
+        "🏆 星闪工具箱项目获得2024年华为开发者年度盛典卓越社区价值贡献奖",
+        "📈 星闪工具箱累计1000+社区用户，50+开源项目生态支持",
+        "⚡ 增强内部工作流程效率30%，通过自动化工具和流程优化显著提升团队生产力",
+        "🎯 主导数个关键项目的技术架构设计，提升系统整体性能和稳定性"
       ],
       "responsibilities": [
-        "Developed and maintained backend services using Node.js and Golang."
+        "作为星闪工具箱核心开发者，使用 Rust 和 Tauri 构建跨平台桌面应用。",
+        "负责项目UI/UX设计，打造直观易用的图形化界面，实现傻瓜式操作体验。",
+        "集成海思官方工具和开源方案，实现双剑合璧的烧录解决方案。",
+        "使用 Node.js 和 Golang 设计开发高性能后端服务，支持高并发访问。",
+        "负责数据库设计和优化，确保数据安全和访问效率。"
       ],
       "achievements": [
-        "Implemented a cloud drive and verification code system."
+        "星闪工具箱项目获得华为官方认可，荣获卓越社区价值贡献奖。",
+        "设计并实现一站式串口通信解决方案，支持固件管理、设备调试等多功能。",
+        "实现云端固件商店，支持开发者上传和用户一键下载，构建开源生态。",
+        "设计并实现微服务架构，提升系统可扩展性和维护性。",
+        "实现了云盘和验证码系统，提升用户体验和数据安全性。"
       ],
       "skills": {
         "PHP": "simple-icons:php",
@@ -123,22 +213,25 @@
     },
     {
       "name": "Riddle Town Team",
-      "position": "Full-stack Developer",
-      "location_type": "Remote",
+      "position": "全栈开发工程师",
+      "location_type": "远程",
       "location": "CN",
       "url": "https://rth2.gcxstudio.cn",
       "startDate": "2023-01-01",
       "endDate": "2024-02-11",
-      "summary": "Led page design and account systems.",
+      "summary": "负责页面设计和账户系统开发，主导前端架构设计和用户体验优化。参与产品需求分析和技术方案制定，确保项目按时交付。",
       "highlights": [
-        "Completed 95% of project content."
+        "独立完成95%的项目开发工作，包括前端页面、后端接口和数据库设计。",
+        "成功建立一套完整的用户管理和游戏系统，吸引超过1000名用户参与。"
       ],
       "responsibilities": [
-        "Developed complete pages.",
-        "Integrated user-facing elements with server-side logic."
+        "设计并开发响应式页面，确保在不同设备上的良好用户体验。",
+        "优化前后端数据交互，提升页面加载速度和用户体验。",
+        "实现用户权限管理和数据安全防护机制。"
       ],
       "achievements": [
-        "Ensured smooth project execution."
+        "建立项目文档和部署流程，确保项目可维护性和扩展性。",
+        "实现了类 Windows 风格的用户界面，提升用户操作体验。"
       ],
       "skills": {
         "HTML": "simple-icons:html5",
@@ -162,331 +255,235 @@
     {
       "name": "HTML",
       "icon": "simple-icons:html5",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
+      "level": "中级",
+      "category": "前端技术",
+      "keywords": ["Web开发", "前端"]
     },
     {
       "name": "CSS",
       "icon": "ri:css3-fill",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
+      "level": "中级",
+      "category": "前端技术",
+      "keywords": ["Web开发", "前端", "响应式设计"]
     },
     {
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
-      "level": "Expert",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
+      "level": "专家级",
+      "category": "核心技术",
+      "keywords": ["Web开发", "前端", "后端", "全栈"]
     },
     {
       "name": "Tailwind",
       "icon": "mdi:tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
+      "level": "中级",
+      "category": "前端技术",
+      "keywords": ["Web开发", "前端", "CSS框架", "响应式设计"]
     },
     {
       "name": "TypeScript",
       "icon": "simple-icons:typescript",
-      "level": "Expert",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
+      "level": "专家级",
+      "category": "核心技术",
+      "keywords": ["Web开发", "前端", "后端", "JavaScript超集"]
     },
     {
       "name": "Node",
       "icon": "ri:nodejs-line",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
+      "level": "中级",
+      "category": "后端技术",
+      "keywords": ["Web开发", "后端", "JavaScript", "服务器"]
     },
     {
       "name": "SQL",
       "icon": "simple-icons:mysql",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "level": "中级",
+      "category": "后端技术",
+      "keywords": ["数据库", "SQL", "数据存储", "后端"]
     },
     {
       "name": "MongoDB",
       "icon": "simple-icons:mongodb",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "File",
-        "Data Storage",
-        "Backend"
-      ]
+      "level": "中级",
+      "category": "后端技术",
+      "keywords": ["数据库", "文件", "数据存储", "后端"]
     },
     {
       "name": "Git",
       "icon": "mdi:git",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["版本控制", "协作", "源代码"]
     },
     {
       "name": "GitHub",
       "icon": "mdi:github",
-      "level": "Expert",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
+      "level": "专家级",
+      "category": "工具平台",
+      "keywords": ["版本控制", "协作", "源代码", "Git"]
     },
     {
       "name": "Next.js",
       "icon": "ri:nextjs-line",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
+      "level": "中级",
+      "category": "前端技术",
+      "keywords": ["Web开发", "前端", "React框架", "SSR", "静态生成"]
     },
     {
       "name": "React",
       "icon": "mdi:react",
-      "level": "Expert",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "level": "专家级",
+      "category": "前端技术",
+      "keywords": ["Web开发", "前端", "JavaScript库", "UI"]
     },
     {
       "name": "Vue",
       "icon": "mdi:vuejs",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "level": "中级",
+      "category": "前端技术",
+      "keywords": ["Web开发", "前端", "JavaScript库", "UI"]
     },
     {
       "name": "Docker",
       "icon": "mdi:docker",
-      "level": "Intermediate",
-      "keywords": [
-        "Virtual Environments",
-        "Backend"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["虚拟环境", "后端"]
     },
     {
       "name": "NestJS",
       "icon": "simple-icons:nestjs",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "IOC"
-      ]
+      "level": "中级",
+      "category": "后端技术",
+      "keywords": ["Web开发", "后端", "IOC"]
     },
     {
       "name": "Vite",
       "icon": "simple-icons:vite",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Build Tool"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["Web开发", "前端", "构建工具"]
     },
     {
       "name": "WordPress",
       "icon": "ri:wordpress-fill",
-      "level": "Intermediate",
-      "keywords": [
-        "PHP",
-        "Fullstack",
-        "Frontend"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["PHP", "全栈", "前端"]
     },
     {
       "name": "Golang",
       "icon": "simple-icons:go",
-      "level": "Beginner",
-      "keywords": [
-        "Backend",
-        "Cloud Service"
-      ]
+      "level": "初级",
+      "category": "核心技术",
+      "keywords": ["后端", "云服务"]
     },
     {
       "name": "Astro",
       "icon": "simple-icons:astro",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "SSR",
-        "Static Generation"
-      ]
+      "level": "中级",
+      "category": "前端技术",
+      "keywords": ["Web开发", "前端", "SSR", "静态生成"]
     },
     {
       "name": "PHP",
       "icon": "simple-icons:php",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Fullstack"
-      ]
+      "level": "中级",
+      "category": "核心技术",
+      "keywords": ["Web开发", "后端", "全栈"]
     },
     {
       "name": "Nginx",
       "icon": "simple-icons:nginx",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Web Server"
-      ]
+      "level": "中级",
+      "category": "后端技术",
+      "keywords": ["Web开发", "后端", "Web服务器"]
     },
     {
       "name": "Tauri",
       "icon": "simple-icons:tauri",
-      "level": "Beginner",
-      "keywords": [
-        "Desktop App",
-        "Rust",
-        "Webview"
-      ]
+      "level": "中级",
+      "category": "其他技术",
+      "keywords": ["桌面应用", "Rust", "Web视图", "跨平台"]
     },
     {
       "name": "Rust",
       "icon": "simple-icons:rust",
-      "level": "Beginner",
-      "keywords": [
-        "Desktop App",
-        "Webview"
-      ]
+      "level": "中级",
+      "category": "核心技术",
+      "keywords": ["桌面应用", "Web视图", "系统编程", "高性能"]
     },
     {
       "name": "Socket.IO",
       "icon": "simple-icons:socketdotio",
-      "level": "Beginner",
-      "keywords": [
-        "Realtime",
-        "Websocket"
-      ]
+      "level": "初级",
+      "category": "后端技术",
+      "keywords": ["实时通信", "Websocket"]
     },
     {
       "name": "Electron",
       "icon": "simple-icons:electron",
-      "level": "Beginner",
-      "keywords": [
-        "Desktop App",
-        "Webview"
-      ]
+      "level": "初级",
+      "category": "其他技术",
+      "keywords": ["桌面应用", "Web视图"]
     },
     {
       "name": "Shell",
       "icon": "simple-icons:shell",
-      "level": "Intermediate",
-      "keywords": [
-        "Scripting",
-        "Automation"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["脚本", "自动化"]
     },
     {
       "name": "Linux",
       "icon": "simple-icons:linux",
-      "level": "Intermediate",
-      "keywords": [
-        "OS",
-        "Scripting",
-        "Automation"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["OS", "脚本", "自动化"]
     },
     {
       "name": "Vercel",
       "icon": "simple-icons:vercel",
-      "level": "Intermediate",
-      "keywords": [
-        "Serverless",
-        "Static Site Hosting"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["无服务器", "静态站点托管"]
     },
     {
       "name": "Netlify",
       "icon": "simple-icons:netlify",
-      "level": "Intermediate",
-      "keywords": [
-        "Serverless",
-        "Static Site Hosting"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["无服务器", "静态站点托管"]
     },
     {
       "name": "Tencent Cloud",
       "icon": "simple-icons:tencentqq",
-      "level": "Intermediate",
-      "keywords": [
-        "Cloud Service"
-      ]
+      "level": "中级",
+      "category": "工具平台",
+      "keywords": ["云服务"]
     },
     {
       "name": "Cloudflare Edge Functions",
       "icon": "simple-icons:cloudflare",
-      "level": "Expert",
-      "keywords": [
-        "Serverless",
-        "Edge Computing"
-      ]
+      "level": "专家级",
+      "category": "工具平台",
+      "keywords": ["无服务器", "边缘计算"]
     }
   ],
   "languages": [
     {
-      "language": "Chinese",
-      "fluency": "Native speaker"
+      "language": "中文",
+      "fluency": "母语"
     },
     {
-      "language": "English",
-      "fluency": "Intermediate"
+      "language": "英语",
+      "fluency": "中级"
     }
   ],
   "interests": [
     {
-      "name": "Technology",
-      "keywords": [
-        "AI",
-        "Blockchain"
-      ]
+      "name": "技术",
+      "keywords": ["AI", "Blockchain"]
     }
   ],
   "references": [
@@ -497,6 +494,24 @@
   ],
   "projects": [
     {
+      "name": "星闪工具箱 (NearLink Toolbox)",
+      "image": {
+        "url": "https://i0.hdslb.com/bfs/openplatform/498f86fac03393b2f8c0b26cd95f0e88962e8a7c.webp",
+        "position": "container"
+      },
+      "isActive": true,
+      "description": "一站式串口通信解决方案，获得华为开发者年度盛典卓越社区价值贡献奖的开源项目",
+      "highlights": [
+        "🏆 获得2024年华为开发者年度盛典卓越社区价值贡献奖",
+        "🚀 基于 Rust 和 Tauri 构建，提供卓越性能和跨平台支持",
+        "⚡ 集成海思官方工具和开源 ws63flash，双剑合璧的烧录方案",
+        "�  1000+ 社区用户，50+ 开源项目生态支持",
+        "🎯 傻瓜式操作，图形化界面让烧录变得简单直观"
+      ],
+      "url": "https://nearlink.sgguo.com/",
+      "github": "https://github.com/Sgguo-Development-Team"
+    },
+    {
       "name": "Cloudflare Vmail",
       "image": {
         "url": "https://i0.hdslb.com/bfs/article/985e2caa8266dee4b9861ee6a341886d480025691.png@1e_1c.webp",
@@ -504,29 +519,29 @@
         "dark": "https://i0.hdslb.com/bfs/article/4d0bf8a784d22e54e3e61763c361c9ef480025691.png@100q_1e_1c.webp"
       },
       "isActive": true,
-      "description": "An open source temporary email tool, fully on Cloudflare. Inspired by oiov/vmail",
+      "description": "一个开源的临时邮箱工具，完全基于 Cloudflare。灵感来自 oiov/vmail",
       "highlights": [
-        "🎯 Privacy-friendly, no registration required, out-of-the-box",
-        "✨ Support saving passwords and retrieving email addresses",
-        "😄 Support multiple domain name suffixes",
-        "🚀 100% open source, fully based on Cloudflare."
+        "🎯 隐私友好，无需注册，开箱即用",
+        "✨ 支持保存密码和找回邮箱地址",
+        "😄 支持多个域名后缀",
+        "🚀 100% 开源，完全基于 Cloudflare。"
       ],
-      "url": "https://what-the-fuck.sbs",
+      "url": "https://mirahikari.xyz",
       "github": "https://github.com/MiraHikari/cloudflare-vmail"
     },
     {
       "name": "Riddle Town Hunt 2",
       "image": {
-        "url": "https://rth2-webstatic.gbclstudio.cn/wp-content/uploads/2024/02/1707656250-76b2b0d2c94824e89a2b8b2c7d1c6afe.png",
+        "url": "https://i0.hdslb.com/bfs/openplatform/02bd8d56f7f6c3dc6c59efbfba460958269e57b5.png@1e_1c.webp",
         "position": "background"
       },
       "isActive": false,
-      "description": "Public decryption activity in the form of Puzzle Hunt.",
+      "description": "以 Puzzle Hunt 形式举办的公开解密活动。",
       "highlights": [
-        "👌 More than 1000 people participated, system runs normally",
-        "😮‍ Use headless CMS: WordPress to storage and manage contents, dynamically render page",
-        "😊 Windows-like interface",
-        "💕 Based on Astro"
+        "👌 超过1000人参与，系统运行正常",
+        "😮‍ 使用无头 CMS：WordPress 存储和管理内容，动态渲染页面",
+        "😊 类 Windows 界面",
+        "💕 基于 Astro 构建"
       ],
       "url": "https://rth2.gcxstudio.cn/"
     }

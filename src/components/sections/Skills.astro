@@ -1,21 +1,36 @@
 ---
 import Section from '../Section.astro'
+import SkillBadge from '../SkillBadge.astro'
 import { skills } from '@cv'
-import { Icon } from 'astro-icon/components'
+
+// 按类别分组技能
+const skillsByCategory = skills.reduce((acc: Record<string, any[]>, skill: any) => {
+  const category = skill.category || '其他技术'
+  if (!acc[category]) {
+    acc[category] = []
+  }
+  acc[category].push(skill)
+  return acc
+}, {})
+
+// 定义类别顺序 - 简化为5个主要类别
+const categoryOrder = ['核心技术', '前端技术', '后端技术', '工具平台', '其他技术']
+const sortedCategories = categoryOrder.filter(cat => skillsByCategory[cat])
 ---
 
-<Section className={Astro.props.className} title='Skills'>
-  <ul
-    class='inline-flex print:mt-4 flex-wrap gap-4 [&>li>svg]:text-skin-hue [&>li]:text-sm'>
-    {
-      skills.map(({ name, icon, level}) => {
-        return (
-          <li class='flex items-center gap-1 rounded-md border border-solid border-skin-hue/20 bg-skin-button-accent/20 px-1 py-0.5 text-xs text-skin-hue print:border-none print:bg-transparent print:p-0 print:text-zinc-800' title={level}>
-            {icon && <Icon name={icon} width={16} height={16} />}{' '}
-            <span>{name}</span>
-          </li>
-        )
-      })
-    }
-  </ul>
+<Section className={Astro.props.className} title='技能'>
+  <div class='space-y-5 print:space-y-3'>
+    {sortedCategories.map(category => (
+      <div>
+        <h4 class='text-sm font-medium text-skin-base mb-3 print:mb-2'>
+          {category}
+        </h4>
+        <div class='flex flex-wrap gap-2 print:gap-1'>
+          {skillsByCategory[category].map(({ name, icon, level }: any) => (
+            <SkillBadge name={name} icon={icon} level={level} />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
 </Section>

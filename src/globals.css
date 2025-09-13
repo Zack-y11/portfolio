@@ -150,3 +150,10 @@
     }
   }
 }
+
+html {
+  font-feature-settings: "rlig" 1, "calt" 1;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+  font-family: "Inter", 'HarmonyOS Sans SC', 'Helvetica Neue', Arial, sans-serif !important;
+}

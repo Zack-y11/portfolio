@@ -1,14 +1,15 @@
 ---
 import Section from '../Section.astro'
+import SkillBadge from '../SkillBadge.astro'
 import { work } from '@cv'
 import { Icon } from 'astro-icon/components'
 ---
 
-<Section className={Astro.props.className} title="Experience">
+<Section className={Astro.props.className} title="工作经历">
   <ul class="flex flex-col">
     {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
       const startYear = new Date(startDate).getFullYear()
-      const endYear = endDate != null ? new Date(endDate).getFullYear() : "Present"
+      const endYear = endDate != null ? new Date(endDate).getFullYear() : "至今"
 
       return (
         <li class="relative print:py-2">
@@ -43,11 +44,11 @@ import { Icon } from 'astro-icon/components'
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm">
                 {summary && (
                   <div class="flex flex-col gap-1">
-                    <h4>Summary:</h4>
+                    <h4>工作概述:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {Array.isArray(summary) ? (
                         summary.map(item => (
-                          {item}
+                          <li>{item}</li>
                         ))
                       ) : (
                         <li>{summary}</li>
@@ -57,45 +58,48 @@ import { Icon } from 'astro-icon/components'
                 )}
 
                 {(responsibilities || achievements) &&  (
-                <div class="after:from-skin-hue dark:after:to-skin-hue/0 flex relative flex-col print:!h-auto gap-4 print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full print:after:hidden after:h-12 after:content-[''] h-16 group-data-[expanded=true]:after:hidden group-data-[expanded=true]:h-auto overflow-hidden duration-200 ease-out">
-                {responsibilities && (
-                  <div class="flex flex-col gap-1">
-                    <h4>Responsibilities:</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
-                      {responsibilities.map(responsibility => (
-                        <li>{responsibility}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <div class="expandable-content relative flex flex-col print:!h-auto gap-4 print:gap-2 overflow-hidden transition-all duration-300 ease-in-out">
+                  <div class="expandable-inner">
+                    {responsibilities && (
+                      <div class="flex flex-col gap-1">
+                        <h4>主要职责:</h4>
+                        <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                          {responsibilities.map(responsibility => (
+                            <li>{responsibility}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
-                {achievements && (
-                  <div class="flex flex-col gap-1">
-                    <h4>Achievements:</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
-                      {achievements.map(achievement => (
-                        <li>{achievement}</li>
-                      ))}
-                    </ul>
+                    {achievements && (
+                      <div class="flex flex-col gap-1 mt-4">
+                        <h4>主要成就:</h4>
+                        <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                          {achievements.map(achievement => (
+                            <li>{achievement}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
-                )}
+                  
+                  <div class="fade-overlay absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-skin-hue dark:to-skin-hue/0 print:hidden pointer-events-none transition-opacity duration-300 ease-in-out"></div>
                 </div>
 
                 <button class="print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-muted transition-all hover:text-skin-base flex expand-button">
-                  <span class="expand-text">Show more</span>
-                  <Icon name="ri:arrow-up-s-line" class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out group-data-[expanded=true]:rotate-180" width={24} height={24}></Icon>
+                  <span class="expand-text">展开更多</span>
+                  <Icon name="ri:arrow-up-s-line" class="w-4 h-4 group-hover/more:translate-y-0.5 transition-transform duration-200 ease-out" width={24} height={24}></Icon>
                 </button>
 
 
-                <ul class="flex print:hidden flex-wrap gap-2" aria-label="Technologies used">
-                  {skills && Object.entries(skills).map(([label, icon]) =>  (
-                      <li class="bg-skin-button-accent/20 border-skin-hue/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs backdrop-blur-sm">
-                        {icon && <Icon name={icon} width={16} height={16} />} <span>{label}</span>
-                      </li>
-                    )
-                  )
-                  }
-                </ul>
+                <div class="flex print:hidden flex-wrap gap-2" aria-label="使用的技术">
+                  {skills && Object.entries(skills).map(([label, icon]) => (
+                    <SkillBadge 
+                      name={label} 
+                      icon={icon as string}
+                    />
+                  ))}
+                </div>
 )}
               </div>
             </div>
@@ -106,20 +110,76 @@ import { Icon } from 'astro-icon/components'
   </ul>
 </Section>
 <script>
-  const expandButton = document.querySelectorAll('.expand-button');
+  document.addEventListener('DOMContentLoaded', () => {
+    const expandButtons = document.querySelectorAll('.expand-button');
 
-  expandButton.forEach(button => {
-    button.addEventListener('click', () => {
-      const container = button.closest<HTMLElement>('.expand-container')!;
-      container.dataset.expanded = container.dataset.expanded === 'true' ? 'false' : 'true';
-      const expandText = button.querySelector('.expand-text')!;
-      expandText.innerHTML = container.dataset.expanded === 'true' ? 'Show less' : 'Show more'
+    expandButtons.forEach(button => {
+      const container = button.closest('.expand-container') as HTMLElement;
+      const expandableContent = container?.querySelector('.expandable-content') as HTMLElement;
+      const fadeOverlay = container?.querySelector('.fade-overlay') as HTMLElement;
+      const icon = button.querySelector('svg') as SVGElement;
+      const expandText = button.querySelector('.expand-text') as HTMLElement;
+
+      if (!expandableContent || !fadeOverlay || !icon || !expandText) return;
+
+      // Set initial collapsed state
+      const isExpanded = container.dataset.expanded === 'true';
+      if (!isExpanded) {
+        expandableContent.style.maxHeight = '4rem'; // 16 * 0.25rem = 4rem
+      }
+
+      button.addEventListener('click', () => {
+        const isCurrentlyExpanded = container.dataset.expanded === 'true';
+        const newExpandedState = !isCurrentlyExpanded;
+        
+        container.dataset.expanded = newExpandedState.toString();
+
+        if (newExpandedState) {
+          // Expanding
+          const scrollHeight = expandableContent.scrollHeight;
+          expandableContent.style.maxHeight = `${scrollHeight}px`;
+          fadeOverlay.style.opacity = '0';
+          icon.style.transform = 'rotate(180deg)';
+          expandText.textContent = '收起';
+        } else {
+          // Collapsing
+          expandableContent.style.maxHeight = '4rem';
+          fadeOverlay.style.opacity = '1';
+          icon.style.transform = 'rotate(0deg)';
+          expandText.textContent = '展开更多';
+        }
+      });
     });
   });
 </script>
 
 <style>
   li::marker {
-    @apply text-skin-hue
+    @apply text-skin-hue;
+  }
+
+  .expandable-content {
+    max-height: 4rem;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .expand-container[data-expanded="true"] .expandable-content {
+    max-height: none;
+  }
+
+  .expand-container[data-expanded="true"] .fade-overlay {
+    opacity: 0;
+  }
+
+  .expand-container[data-expanded="true"] .expand-button svg {
+    transform: rotate(180deg);
+  }
+
+  .expand-button svg {
+    transition: transform 0.2s ease-out;
+  }
+
+  .fade-overlay {
+    transition: opacity 0.3s ease-in-out;
   }
 </style>
