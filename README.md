@@ -1,10 +1,12 @@
-## Print-friendly portfolio CV
+## Portfolio CV
 
 ![preview](https://github.com/user-attachments/assets/44c47034-06e4-412a-b9dd-014593b32215)
 
 ## 📄 About
 
-This project is refactored from the original [**dev-portfolio**](https://github.com/Smilesharks/dev-portfolio) project, thanks for his work.
+This is my personal portfolio/CV project built with Astro. It's designed to be beautiful and fully responsive.
+
+Special thanks to the original [**dev-portfolio**](https://github.com/Smilesharks/dev-portfolio) project for inspiration.
 
 I use iconify instead of SVG icons for better dev experience.
 
@@ -24,7 +26,7 @@ Thanks for antfu's cool animations.
 ### 0. One-click to deploy on Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/MiraHikari/portfolio&project-name=portfolio&repository-name=portfolio)
 
-Modify the `cv.json` file to create your own printable Portfolio/CV.
+Modify the `cv.json` file to create your own Portfolio/CV.
 
 ### 1. Use this Repo as an Astro Project Template
 
@@ -46,7 +48,7 @@ pnpm install
 
 ### 2. Add Your Content:
 
-Edit the `cv.json` file to create your own printable Portfolio/CV.
+Edit the `cv.json` file to create your own Portfolio/CV.
 
 ### 3. Launch the Development Server:
 
@@ -72,5 +74,3 @@ Change the data-theme of `cv.json` and choose one of the colour themes defined i
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-CV JSON schema from [**jsonresume.org**](https://jsonresume.org/schema/)

@@ -2,14 +2,14 @@
 import ArtPlums from "@/components/ArtPlums.astro";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import '../globals.css'
-import CV from "@cv";
+import { loadCV } from "@/utils/cvLoader";
 
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
-
+const CV = await loadCV();
 const { image, summary, url, theme } = CV.basics;
 ---
 
@@ -29,7 +29,7 @@ const { image, summary, url, theme } = CV.basics;
     <meta property="og:image" content="" />
     <meta name="referrer" content="no-referrer" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
+    <meta property="twitter:domain" content={url?.split("//")[1] ?? ""} />
     <meta property="twitter:url" content={url} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={summary} />

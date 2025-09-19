@@ -7,7 +7,7 @@
     "image": "/avatar.png",
     "email": "mirahikari@gcxstudio.cn",
     "url": "https://www.gcxstudio.cn",
-    "summary": "2010年出生，主要使用 TypeScript 和 JavaScript 进行全栈开发，喜欢尝试各种技术。拥有丰富的Web开发经验，熟练掌握现代前端框架和后端技术，致力于创建高质量、用户友好的数字产品。具备良好的团队协作能力和项目管理经验。",
+    "summary": "15 岁的全栈开发者，主要使用 TypeScript 和 JavaScript 进行开发。获得华为开发者年度盛典奖项，具备丰富的 Web 开发经验和项目管理能力。",
     "theme": "red",
     "location": {
       "address": "南昌",
@@ -38,6 +38,104 @@
     "beian": {
       "mint": "赣ICP备2021005460号-1",
       "police": "赣公网安备 36010302000349号"
+    },
+    "about": {
+      "personalInfo": [
+        {
+          "emoji": "🎂",
+          "label": "年龄",
+          "value": "15岁",
+          "color": "blue"
+        },
+        {
+          "emoji": "📍",
+          "label": "地点",
+          "value": "江西南昌",
+          "color": "green"
+        },
+        {
+          "emoji": "🎓",
+          "label": "学历",
+          "value": "在读学生",
+          "color": "purple"
+        },
+        {
+          "emoji": "💼",
+          "label": "经验",
+          "value": "3+ 年开发",
+          "color": "orange"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "🚀",
+          "text": "快速学习新技术",
+          "color": "blue"
+        },
+        {
+          "emoji": "🎨",
+          "text": "注重用户体验设计",
+          "color": "pink"
+        },
+        {
+          "emoji": "⚡",
+          "text": "高效的问题解决能力",
+          "color": "yellow"
+        },
+        {
+          "emoji": "🤝",
+          "text": "优秀的团队协作精神",
+          "color": "green"
+        }
+      ],
+      "highlights": [
+        {
+          "emoji": "🏆",
+          "text": "华为开发者年度盛典获奖者",
+          "color": "gold"
+        },
+        {
+          "emoji": "📈",
+          "text": "1000+ 社区用户产品开发者",
+          "color": "blue"
+        },
+        {
+          "emoji": "💡",
+          "text": "开源项目贡献者",
+          "color": "green"
+        },
+        {
+          "emoji": "🎯",
+          "text": "全栈技术专家",
+          "color": "purple"
+        }
+      ],
+      "quote": {
+        "text": "代码如诗，技术如画。用心创造，用爱编程。",
+        "emoji": "💻",
+        "values": [
+          {
+            "emoji": "🎨",
+            "label": "创造",
+            "color": "pink"
+          },
+          {
+            "emoji": "💡",
+            "label": "创新",
+            "color": "yellow"
+          },
+          {
+            "emoji": "🎯",
+            "label": "专注",
+            "color": "blue"
+          },
+          {
+            "emoji": "🚀",
+            "label": "进步",
+            "color": "green"
+          }
+        ]
+      }
     }
   },
   "images": {
@@ -109,8 +207,7 @@
       ],
       "responsibilities": [
         "作为星闪工具箱核心开发者，使用 Rust 和 Tauri 构建跨平台桌面应用。",
-        "负责项目UI/UX设计，打造直观易用的图形化界面，实现傻瓜式操作体验。",
-        "独立开发基于 Astro 的打印友好型简历项目，实现多主题切换和响应式设计。",
+        "负责项目UI/UX设计，打造直观易用的图形化界面，实现傍瓜式操作体验。",
         "集成海思官方工具和开源方案，实现双剑合璧的烧录解决方案。",
         "使用 Node.js 和 Golang 设计开发高性能后端服务，支持高并发访问。",
         "负责数据库设计和优化，确保数据安全和访问效率。"
@@ -120,8 +217,7 @@
         "设计并实现一站式串口通信解决方案，支持固件管理、设备调试等多功能。",
         "实现云端固件商店，支持开发者上传和用户一键下载，构建开源生态。",
         "设计并实现微服务架构，提升系统可扩展性和维护性。",
-        "实现了云盘和验证码系统，提升用户体验和数据安全性。",
-        "独立开发打印友好型简历项目，获得开源社区认可和广泛使用。"
+        "实现了云盘和验证码系统，提升用户体验和数据安全性。"
       ],
       "skills": {
         "PHP": "simple-icons:php",
@@ -308,7 +404,7 @@
       "icon": "simple-icons:astro",
       "level": "专家级",
       "category": "前端技术",
-      "keywords": ["Web开发", "前端", "SSR", "静态生成", "打印优化", "多主题"]
+      "keywords": ["Web开发", "前端", "SSR", "静态生成", "多主题"]
     },
     {
       "name": "PHP",
@@ -437,21 +533,21 @@
       "github": "https://github.com/Sgguo-Development-Team"
     },
     {
-      "name": "Print-friendly Portfolio CV",
+      "name": "Portfolio CV",
       "image": {
         "url": "https://i0.hdslb.com/bfs/openplatform/e49d4b93b2aaec50944947d36f5cf545a2718200.jpg@1e_1c.webp",
         "position": "container"
       },
       "isActive": true,
-      "description": "基于 Astro 构建的打印友好型个人简历项目，支持多主题切换和响应式设计",
+      "description": "基于 Astro 构建的个人简历项目，完全由个人独立开发",
       "highlights": [
-        "🖨️ 专为打印优化的简历布局，完美适配纸质版本",
-        "� 支私持多种主题色彩（红、蓝、绿、赛博朋克、粉色）",
+        "🎨 支持多种主题色彩（红、蓝、绿、赛博朋克、粉色）",
         "📱 完全响应式设计，适配各种设备尺寸",
         "⚡ 基于 Astro 构建，性能卓越，SEO 友好",
-        "� 通过 %JSON 配置文件轻松自定义内容"
+        "🔧 通过 JSON 配置文件轻松自定义内容",
+        "💻 个人独立设计开发，完全开源免费"
       ],
-      "url": "https://wwww.gcxstudio.cn",
+      "url": "https://www.gcxstudio.cn",
       "github": "https://github.com/MiraHikari/portfolio"
     },
     {

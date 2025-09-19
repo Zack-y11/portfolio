@@ -1,10 +1,12 @@
 ---
 import Section from "../Section.astro";
-import Card from "../Card.astro";
+import Card from "../ui/Card.astro";
 import { Icon } from "astro-icon/components";
-
-import { projects } from "@cv";
+import { loadCV } from "@/utils/cvLoader";
 import { Image } from "astro:assets";
+
+const CV = await loadCV();
+const { projects = [] } = CV;
 ---
 
 <Section className={Astro.props.className} title="项目经历">
@@ -80,7 +82,7 @@ import { Image } from "astro:assets";
                 {description}
               </p>
               <ul class={`relative z-10 mt-1 text-sm text-skin-inverted`}>
-                {highlights.map((highlight) => {
+                {highlights?.map((highlight) => {
                   return <li>{highlight}</li>;
                 })}
               </ul>

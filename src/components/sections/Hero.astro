@@ -1,34 +1,37 @@
 ---
-import { basics } from "@cv";
+import { getBasics } from "@/utils/cvLoader";
 import Section from "@/components/Section.astro";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 
+const basics = await getBasics();
 const { name, label, image, location, profiles, email } = basics;
-const { city, region, address } = location;
+const { city, region, address } = location || {};
 ---
 
 <Section>
   <div class="hero-container">
     <!-- Avatar Section - Top Position -->
-    <div class="avatar-section">
-      <figure class="avatar-figure">
-        <Image
-          class="avatar-image"
-          height={600}
-          width={600}
-          src={image}
-          alt={name}
-        />
-        <!-- Preserved decorative borders -->
-        <div class="avatar-decorations">
-          <div class="border-right"></div>
-          <div class="border-left"></div>
-          <div class="border-bottom"></div>
-          <div class="border-top"></div>
-        </div>
-      </figure>
-    </div>
+    {image && (
+      <div class="avatar-section">
+        <figure class="avatar-figure">
+          <Image
+            class="avatar-image"
+            height={600}
+            width={600}
+            src={image!}
+            alt={name}
+          />
+          <!-- Preserved decorative borders -->
+          <div class="avatar-decorations">
+            <div class="border-right"></div>
+            <div class="border-left"></div>
+            <div class="border-bottom"></div>
+            <div class="border-top"></div>
+          </div>
+        </figure>
+      </div>
+    )}
 
     <!-- Info Section - Below Avatar -->
     <div class="info-section">
@@ -67,7 +70,7 @@ const { city, region, address } = location;
           }
 
           {
-            profiles.map(({ network, url, icon }) => (
+            profiles?.map(({ network, url, icon }) => (
               <a
                 href={url}
                 title={`访问 ${name} 在 ${network} 上的主页`}

@@ -11,7 +11,7 @@ interface Props {
 const { name, icon, level, className = '' } = Astro.props
 ---
 
-<div 
+<div
   class={`bg-skin-button-accent/20 border-skin-hue/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs backdrop-blur-sm ${className}`}
   title={level}
 >

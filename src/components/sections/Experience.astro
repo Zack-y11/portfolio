@@ -1,8 +1,11 @@
 ---
 import Section from '../Section.astro'
-import SkillBadge from '../SkillBadge.astro'
-import { work } from '@cv'
+import SkillBadge from '../ui/SkillBadge.astro'
+import { loadCV } from '@/utils/cvLoader'
 import { Icon } from 'astro-icon/components'
+
+const CV = await loadCV();
+const { work = [] } = CV;
 ---
 
 <Section className={Astro.props.className} title="工作经历">
@@ -82,7 +85,7 @@ import { Icon } from 'astro-icon/components'
                       </div>
                     )}
                   </div>
-                  
+
                   <div class="fade-overlay absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-skin-hue dark:to-skin-hue/0 print:hidden pointer-events-none transition-opacity duration-300 ease-in-out"></div>
                 </div>
 
@@ -94,8 +97,8 @@ import { Icon } from 'astro-icon/components'
 
                 <div class="flex print:hidden flex-wrap gap-2" aria-label="使用的技术">
                   {skills && Object.entries(skills).map(([label, icon]) => (
-                    <SkillBadge 
-                      name={label} 
+                    <SkillBadge
+                      name={label}
                       icon={icon as string}
                     />
                   ))}
@@ -131,7 +134,7 @@ import { Icon } from 'astro-icon/components'
       button.addEventListener('click', () => {
         const isCurrentlyExpanded = container.dataset.expanded === 'true';
         const newExpandedState = !isCurrentlyExpanded;
-        
+
         container.dataset.expanded = newExpandedState.toString();
 
         if (newExpandedState) {
