@@ -6,7 +6,7 @@
     "label": "Full Stack Developer | Backend",
     "image": "/avatar.png",
     "email": "dev.zacknmr28@gmail.com",
-    "url": "https://www.gcxstudio.cn",
+    "url": "isaacmedrano.tech",
     "summary": "I primarily work with TypeScript and JavaScript for full-stack development, and enjoy working with various technologies.",
     "theme": "red",
     "location": {
@@ -50,7 +50,7 @@
         "desc": "Shot on a nice day in Ataco. 2024.07.21"
       },
       {
-        "image": "https://i0.hdslb.com/bfs/article/14e6ae3c368b0eddeeb2b5c338239486480025691.jpg@90q_1e_1c.webp",
+        "image": "https://res.cloudinary.com/dkeu1rgrm/image/upload/v1740589767/studying-session_ffsp5x.jpg",
         "alt": "Emoji",
         "desc": "True, dude"
       },
@@ -148,7 +148,8 @@
         "React": "mdi:react",
         "GitHub": "mdi:github",
         "Git": "mdi:git",
-        "Express": "simple-icons:express"
+        "Express": "simple-icons:express",
+        "Docker": "mdi:docker"
       }
     }
   ],
@@ -156,7 +157,7 @@
     {
       "name": "HTML",
       "icon": "simple-icons:html5",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend"
@@ -165,7 +166,7 @@
     {
       "name": "CSS",
       "icon": "ri:css3-fill",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -175,7 +176,7 @@
     {
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
-      "level": "Expert",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -186,7 +187,7 @@
     {
       "name": "Tailwind",
       "icon": "mdi:tailwind",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -197,7 +198,7 @@
     {
       "name": "TypeScript",
       "icon": "simple-icons:typescript",
-      "level": "Expert",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -208,7 +209,7 @@
     {
       "name": "Express",
       "icon": "simple-icons:express",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Backend",
@@ -218,7 +219,7 @@
     {
       "name": "Python",
       "icon": "simple-icons:python",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Scripting",
         "Automation"
@@ -227,7 +228,7 @@
     {
       "name": "Node",
       "icon": "ri:nodejs-line",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Backend",
@@ -238,7 +239,7 @@
     {
       "name": "SQL",
       "icon": "simple-icons:mysql",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Databases",
         "SQL",
@@ -249,7 +250,7 @@
     {
       "name": "MongoDB",
       "icon": "simple-icons:mongodb",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Databases",
         "File",
@@ -260,7 +261,7 @@
     {
       "name": "Git",
       "icon": "mdi:git",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -270,7 +271,7 @@
     {
       "name": "GitHub",
       "icon": "mdi:github",
-      "level": "Expert",
+      "level": "",
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -281,7 +282,7 @@
     {
       "name": "Next.js",
       "icon": "ri:nextjs-line",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -293,7 +294,7 @@
     {
       "name": "React",
       "icon": "mdi:react",
-      "level": "Expert",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -304,7 +305,7 @@
     {
       "name": "Docker",
       "icon": "mdi:docker",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Virtual Environments",
         "Backend"
@@ -313,7 +314,7 @@
     {
       "name": "NestJS",
       "icon": "simple-icons:nestjs",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Backend",
@@ -323,7 +324,7 @@
     {
       "name": "Vite",
       "icon": "simple-icons:vite",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -333,7 +334,7 @@
     {
       "name": "Golang",
       "icon": "simple-icons:go",
-      "level": "Beginner",
+      "level": "",
       "keywords": [
         "Backend",
         "Cloud Service"
@@ -342,7 +343,7 @@
     {
       "name": "PHP",
       "icon": "simple-icons:php",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Backend",
@@ -352,7 +353,7 @@
     {
       "name": "Nginx",
       "icon": "simple-icons:nginx",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Web Development",
         "Backend",
@@ -360,18 +361,9 @@
       ]
     },
     {
-      "name": "Socket.IO",
-      "icon": "simple-icons:socketdotio",
-      "level": "Beginner",
-      "keywords": [
-        "Realtime",
-        "Websocket"
-      ]
-    },
-    {
       "name": "Shell",
       "icon": "simple-icons:shell",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Scripting",
         "Automation"
@@ -380,7 +372,7 @@
     {
       "name": "Linux",
       "icon": "simple-icons:linux",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "OS",
         "Scripting",
@@ -390,7 +382,7 @@
     {
       "name": "Vercel",
       "icon": "simple-icons:vercel",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Serverless",
         "Static Site Hosting"
@@ -399,7 +391,7 @@
     {
       "name": "Netlify",
       "icon": "simple-icons:netlify",
-      "level": "Intermediate",
+      "level": "",
       "keywords": [
         "Serverless",
         "Static Site Hosting"
