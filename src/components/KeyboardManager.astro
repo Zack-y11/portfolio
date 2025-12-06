@@ -181,21 +181,33 @@ const profilesInfo = profiles.map(({ network, url }) => {
     font-size: 12px;
   }
   #hotkeypad {
+  /* Light mode variables */
+  --hotkeypad-bg-kbd: rgb(var(--muted));
+  --hotkeypad-bg-backdrop: rgb(var(--color-fill));
+  --hotkeypad-bg-container: rgb(var(--color-fill));
+  --hotkeypad-bg-item-hover: rgba(var(--color-text), 20%);
+  --hotkeypad-border-container: rgb(var(--muted));
+  --hotkeypad-border-container-hover: rgb(var(--color-fill));
+  --hotkeypad-fg-muted: rgb(var(--color-text-base)); /* Changed from --muted to --color-text-base */
+  
+  /* Add these new variables for better text visibility */
+  --hotkeypad-fg-text: rgb(var(--color-text-base)); /* Explicit text color */
+  --hotkeypad-fg-kbd: rgb(var(--color-text-base)); /* Color for keyboard shortcut text */
+  --hotkeypad-fg-title: rgb(var(--color-text-base)); /* Color for command titles */
+  
+  @media (prefers-color-scheme: dark) {
     --hotkeypad-bg-kbd: rgb(var(--muted));
     --hotkeypad-bg-backdrop: rgb(var(--color-fill));
     --hotkeypad-bg-container: rgb(var(--color-fill));
-    --hotkeypad-bg-item-hover: rgba(var(--color-text), 20%);
+    --hotkeypad-bg-item-hover: rgba(var(--color), 10%);
     --hotkeypad-border-container: rgb(var(--muted));
     --hotkeypad-border-container-hover: rgb(var(--color-fill));
-    --hotkeypad-fg-muted: rgb(var(--muted));
-    @media (prefers-color-scheme: dark) {
-      --hotkeypad-bg-kbd: rgb(var(--muted));
-      --hotkeypad-bg-backdrop: rgb(var(--color-fill));
-      --hotkeypad-bg-container: rgb(var(--color-fill));
-      --hotkeypad-bg-item-hover: rgba(var(--color), 10%);
-      --hotkeypad-border-container: rgb(var(--muted));
-      --hotkeypad-border-container-hover: rgb(var(--color-fill));
-      --hotkeypad-fg-muted: rgb(var(--color-text-base));
-    }
+    --hotkeypad-fg-muted: rgb(var(--color-text-base));
+    
+    /* Add these new variables for dark mode */
+    --hotkeypad-fg-text: rgb(var(--color-text-base)); 
+    --hotkeypad-fg-kbd: rgb(var(--color-text-base));
+    --hotkeypad-fg-title: rgb(var(--color-text-base));
   }
+}
 </style>
