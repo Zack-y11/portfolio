@@ -4,10 +4,10 @@
   "basics": {
     "name": "Isaac Medrano",
     "label": "Full Stack Developer | Backend",
-    "image": "/avatar.png",
+    "image": "https://res.cloudinary.com/dkeu1rgrm/image/upload/v1776814225/coeSRn2R_rejkq7.jpg",
     "email": "dev.zacknmr28@gmail.com",
     "url": "isaacmedrano.tech",
-    "summary": "I primarily work with TypeScript and JavaScript for full-stack development, and enjoy working with various technologies.",
+    "summary": "I primarily work with TypeScript and JavaScript for full-stack development, and enjoy working with various technologies. Actually learning about to Machine Learning and LLM",
     "theme": "red",
     "location": {
       "address": "Centro",
@@ -33,6 +33,12 @@
         "icon": "mdi:github",
         "username": "Zack-y11",
         "url": "https://github.com/Zack-y11"
+      },
+      {
+        "network": "LinkedIn",
+        "icon": "ri:linkedin-line",
+        "username": "Isaac Medrano Romero",
+        "url": "https://www.linkedin.com/in/isaac-medrano-romero-4865b3274"
       }
     ]
   },
@@ -81,6 +87,43 @@
   ],
   "work": [
     {
+      "name": "The Orange Box",
+      "position": "Full-stack Developer",
+      "location_type": "San Salvador",
+      "location": "Remote",
+      "url": "https://tobagency.co/",
+      "startDate": "2024-06-23",
+      "endDate": null,
+      "summary": "Develop and maintain the websites for The Orange Box and related full-stack projects.",
+      "highlights": [
+        ""
+      ],
+      "responsibilities": [
+        "Develop and maintain the websites for The Orange Box, a digital marketing agency.",
+        "Work closely with the client to understand their needs and requirements.",
+        "Create an ETL System for data handling and incorporate it to make dynamics dashboards"
+      ],
+      "achievements": [
+        "Enhance process in website development sites.",
+        "Improving times for data processing in ETL system",
+        "Developed innovative solutions for complex backend problems, such as integrating third-party services or optimizing system architecture."
+      ],
+      "skills": {
+        "HTML": "simple-icons:html5",
+        "CSS": "ri:css3-fill",
+        "TypeScript": "simple-icons:typescript",
+        "Node": "ri:nodejs-line",
+        "Next.js": "ri:nextjs-fill",
+        "React": "mdi:react",
+        "SQL": "simple-icons:mysql",
+        "Git": "mdi:git",
+        "GitHub": "mdi:github",
+        "Docker": "mdi:docker",
+        "AWS": "mdi:aws",
+        "GCP": "simple-icons:google"
+      }
+    },
+    {
       "name": "Eastern University",
       "position": "University Intern - Backend Developer",
       "location_type": "",
@@ -122,7 +165,7 @@
       "location": "SV",
       "url": "https://mentarie.com/",
       "startDate": "2023-06-01",
-      "endDate": null,
+      "endDate": "2024-02-01",
       "summary": "Manage a backend system also integrate LLM for response with low latency",
       "highlights": [
         "Completed 95% of project content."
